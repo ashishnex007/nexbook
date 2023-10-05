@@ -7,10 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color:white;
 }
+@font-face { font-family: mexcellent-regular; src: url('../public/mexcellent\ rg.otf'); } 
 html{
   background-image: linear-gradient(to bottom, #000000, #00043B);
   background-repeat:no-repeat;
   font-size: 6.25%;
+}
+.app-cont {
+  /* background-image: linear-gradient(to bottom, #000000, #00043B); */
+  min-height: 100vh; /* Ensures that the container covers at least the viewport height */
+  color: white;
+  position: relative; /* Required for zIndex to work */
 }
 
 code {
@@ -26,6 +33,7 @@ div{
 i{
   cursor: pointer;
 }
+
 
 @media (max-width:920px) {
   html{

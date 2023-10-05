@@ -64,3 +64,16 @@ h1{
 .button:hover{
     background-color: rgb(86, 86, 255) !important;
 }
+.logout{
+    cursor: pointer;
+    padding: 8rem;
+    margin-left: 20rem;
+    background-color:#7d4eff99;
+    color: white;
+    border-radius: 25rem;
+    border: none;
+}
+
+.logout:hover{
+    background-color: rgb(86, 86, 255) !important;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "../components_css/login.css"
 import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Login = () => {
     const [credentials, setCredentials] = useState({email:"",password:""})
@@ -53,16 +54,10 @@ const Login = () => {
                     <div className="inputBox">
                         <input type="submit" id="login" value="Login"/>
                     </div>
-                    <p className="signup" >Don't have an Account?<a href="/signup" target="_self">Signup</a></p>
+                    <p className="signup">Don't have an Account?<Link to="/signup" target="_self">Signup</Link></p>
                 </form>
             </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
     </div>
   )
 }

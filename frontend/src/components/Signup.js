@@ -37,11 +37,9 @@ const Signup = () => {
     <br />
     <br />
     <br />
-    <br />
-    <br />
         <div className="container">
             <div className="form">
-                <h2>Signup now</h2>
+                <h2>Signup to NexBook</h2>
                 <form  onSubmit={handleSubmit}>
                     <div className="inputBox">
                         <input type="text" name="name" value={credentials.name} onChange={onChange} placeholder="Your good name :)"/>
@@ -62,12 +60,6 @@ const Signup = () => {
                 </form>
             </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
     </>
   )
 }

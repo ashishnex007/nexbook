@@ -8,13 +8,14 @@ const mongoose = require("mongoose");
 const { query,body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
 const token = jwt.sign({ foo: 'bar' }, 'shhhhh');
 
-const JWT_SECRET = "AshishNexWillRuleTheWorld"
+const JWT_SECRET = process.env.JWT_SECRET
 
 // Connect to MongoDB Atlas
 mongoose.connect(
-  "mongodb+srv://ashishnex007:kaavya12@cluster0.an7mzge.mongodb.net/?retryWrites=true&w=majority",
+  process.env.MONGODB_URL,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

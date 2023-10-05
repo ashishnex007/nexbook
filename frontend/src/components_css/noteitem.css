@@ -17,7 +17,6 @@
     padding-right: 220rem;
     cursor: default;
   }
- 
   #cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200rem, 1fr));
@@ -45,12 +44,21 @@
     /* --mouse-x: 0;
     --mouse-y: 0; */
   }
+  .card:hover{
+    cursor: pointer;
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20rem rgba(255, 255, 255, 0.15);
+  }
   
+  
+
   /* .card:hover::before {
     opacity: 1;
   } */
   
-  .card::before,
+  
+  
+  /* .card::before,
   .card::after {
     border-radius: inherit;
     content: "";
@@ -61,14 +69,14 @@
     top: 0rem;
     transition: opacity 500ms;
     width: 100%;
-  }
+  } */
   
-  .card::before {
+  /* .card::before {
     background: radial-gradient(
       800rem circle at var(--mouse-x) var(--mouse-y),
       rgba(255, 255, 255, 0.06),
       transparent 40%
-    );
+      );
     z-index: 3;
     transform: translate(var(--mouse-x), var(--mouse-y));
     transform-origin: center;
@@ -79,14 +87,15 @@
       600rem circle at var(--mouse-x) var(--mouse-y),
       rgba(255, 255, 255, 0.4),
       transparent 40%
-    );
-    z-index: 1;
-    transform: translate(var(--mouse-x), var(--mouse-y));
-    transform-origin: center;
-  }
-  
-  .card > .card-content {
+      );
+      z-index: 1;
+      transform: translate(var(--mouse-x), var(--mouse-y));
+      transform-origin: center;
+    }
+    */
+    .card > .card-content {
     background-color: var(--card-color);
+    backdrop-filter:blur(5rem);
     border-radius: inherit;
     display: flex;
     flex-direction: column;
@@ -103,7 +112,7 @@
   h1, h2, h3, h4, span {
     color: rgb(240, 240, 240);
     font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     margin: 0rem;
   }
   
@@ -132,14 +141,20 @@
   }
   
   .card-info-title > h3 {
-    font-size: 1.1em;
-    line-height: 20rem;
+    font-size: 29rem;
+    margin-top: -70rem;
   }
   
   .card-info-title > h4 {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.85em;
-    margin-top: 8rem;
+    font-size: 18rem;
+    margin-top: 20rem;
+  }
+  .card-info-title > h4 {
+    max-height: 100rem; /* Adjust the max-height to accommodate 4 lines with your font size */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line; /* Allow wrapping within the container */
   }
 .icons{
   z-index: 4;
@@ -148,4 +163,9 @@
 }
 .edit{
   margin-left: 20rem;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

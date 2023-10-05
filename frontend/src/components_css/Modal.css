@@ -27,20 +27,96 @@ body.active-modal {
 }
 .modal-content {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.155);
     padding: 14rem 28rem;
     border-radius: 20rem;
-    max-width: 600rem;
-    min-width: 300rem;
+    width:800rem;
+    height:500rem;
 }
 
 .close-modal {
     position: absolute;
-    top: 10rem;
-    right: 10rem;
+    top: 30rem;
+    right: 15rem;
     padding: 5rem 7rem;
 }
+.somehead{
+    margin-left: 30rem;
+    font-size: 30rem;
+    margin-bottom: 30rem;
+}
+.addbtn{
+    cursor: pointer;
+    font-size: 20rem;
+    padding: 13rem;
+    margin-top: 0rem;
+    margin-right: 20rem;
+    background-color:#7d4eff99;
+    color: white;
+    border-radius: 25rem;
+    border: none;
+}
+
+.addbtn:disabled{
+    background-color: rgb(35, 35, 52) !important;
+    cursor: default;
+}
+.addbtn:disabled:hover{
+    background-color: rgb(35, 35, 52) !important;
+}
+.addbtn:hover{
+    background-color: rgb(86, 86, 255) !important;
+}
+
+.karma{
+    display: flex;
+    justify-content: end;
+    margin-bottom: -40rem;
+    margin-right: 15rem;
+}
+#mtitle{
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 20rem;
+    border: none;
+    outline:none;
+    margin: 15rem 0rem;
+    border-radius: 20rem;
+    width:300rem;
+    padding: 10rem 20rem;
+}
+#mdescription{
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 20rem;
+    font-family: sans-serif;
+    border: none;
+    outline:none;
+    margin: 10rem 0rem;
+    border-radius: 20rem;
+    width:730rem;
+    height:230rem;
+    padding: 10rem 20rem;
+    resize: none;
+}
+    .alert .msg {
+    display: inline; /* Ensure the message and close button are on the same line */
+    margin-right: 10rem; /* Add some space between the message and close button */
+    margin-left: 10rem;
+    padding: 20rem;
+    }
+  .alert .close-btn {
+    display: inline; /* Ensure the close button is on the same line */
+    cursor: pointer;
+    padding: 0rem;
+  }
+  
+  .alert .close-btn .fas {
+    color: #ce8500;
+    font-size: 22px;
+    line-height: 40px;
+  }

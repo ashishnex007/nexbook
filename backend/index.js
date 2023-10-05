@@ -1,5 +1,4 @@
 const run = require('./db')
-// const addNotes = require('./models/Notes')
 run()
 const express = require("express")
 var cors = require('cors')

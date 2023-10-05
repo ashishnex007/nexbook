@@ -18,7 +18,7 @@ const Navbar = () => {
             {!localStorage.getItem("token")?<>
             <Link to='/login' className='button'>Log In</Link>
             <Link to='/signup' className='button'>Signup</Link>
-            </>:<button onClick={handleLogout}>Logout</button>}
+            </>:<button onClick={handleLogout} className="logout">Logout</button>}
         </nav>
     </header>
     </>
